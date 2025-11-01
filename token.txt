@@ -1,0 +1,16 @@
+flights api token = 63c444c3cc413612a78c9c43
+
+
+
+API call method::
+
+    Round Trip:
+            https://api.flightapi.io/roundtrip/63c444c3cc413612a78c9c43/HYD/COK/2023-02-27/2023-03-12/1/0/0/Economy/USD
+            /roundtrip/{Your-API-Key}/{departure-airport-iata}/{arrival-airport-iata}/{departure-date}/{return-date}/{number-of-adults}/{number-of-childrens}/{number-of-infants}/{cabin-class}/{currency}
+            dict_keys(['legs', 'tags', 'search', 'airlines', 'airports', 'cities', 'providers', 'countries', 'trips', 'fares', 'filters', 'routeSponsors', 'scores', 'paymentMethods', 'fareConditions', 'faresCount', 'promosCount', 'count', 'sponsors'])
+
+    One Way Trip:
+
+            curl "https://api.flightapi.io/onewaytrip/63c444c3cc413612a78c9c43/HEL/OUL/2022-05-20/1/0/0/Economy/USD" : 
+            /onewaytrip/{Your-API-Key}/{departure-airport-iata}/{arrival-airport-iata}/{departure-date}/{number-of-adults}/{number-of-childrens}/{number-of-infants}/{cabin-class}/{currency}
+            dict_keys(['legs', 'tags', 'search', 'airlines', 'airports', 'cities', 'providers', 'countries', 'trips', 'fares', 'filters', 'routeSponsors', 'scores', 'paymentMethods', 'fareConditions', 'faresCount', 'promosCount', 'count', 'sponsors'])
